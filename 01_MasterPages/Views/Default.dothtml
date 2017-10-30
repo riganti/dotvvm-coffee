@@ -1,0 +1,10 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="TitleContent">
+    Homepage
+</dot:Content>
+<dot:Content ContentPlaceHolderID="MainContent">
+    This is homepage.
+</dot:Content>
+

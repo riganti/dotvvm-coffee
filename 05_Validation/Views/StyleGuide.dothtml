@@ -1,0 +1,30 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.StyleGuideViewModel, DotvvmCoffeeTemplate
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <dot:RequiredResource Name="style"/>
+</head>
+<body>
+    <header>
+        <img src="~/Resources/Images/Logos/logo.png"/>
+        <nav>
+            <dot:RouteLink RouteName="Default" Text="Homepage"/>
+            <dot:RouteLink RouteName="Default" Text="About" />
+        </nav>
+    </header>
+    <main>
+        <h1>Title</h1>
+        <p>Content</p>
+    </main>
+    <%--<footer>
+        <b>Open source MVVM framework for Web Apps</b>
+        <p>Easy to learn, easy to use, .NET based</p>
+    </footer>--%>
+</body>
+</html>
+
+

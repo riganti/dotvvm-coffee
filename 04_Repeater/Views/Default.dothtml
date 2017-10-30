@@ -1,0 +1,10 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <dot:Repeater DataSource="{value: Colors}">
+        <dot:Button Text="{value: Name}"
+                    style="{value: "background: " + Name}"/>
+    </dot:Repeater>
+</dot:Content>
+

@@ -1,0 +1,17 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <form>
+        <dot:TextBox Text="{value: Name}" 
+                     placeholder="What's your name?"
+                     autocomplete="off"
+                     UpdateTextAfterKeydown="true"/>
+        <dot:CheckBox Text="Say hello" 
+                      Checked="{value: SayHello}"
+                      Enabled="{value: Name.Length != 0}"/>
+
+        <h3 Visible="{value: SayHello}">Hello, {{value: Name}}</h3>
+    </form>
+</dot:Content>
+

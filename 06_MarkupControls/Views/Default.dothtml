@@ -1,0 +1,10 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">   
+    <controls:YesNoQuestion Question="Is it simple?"
+                            IsYes="{value: IsSimple}"/>
+    <controls:YesNoQuestion Question="Is it easy to use?"
+                            IsYes="{value: IsEasyToUse}"/>
+</dot:Content>
+

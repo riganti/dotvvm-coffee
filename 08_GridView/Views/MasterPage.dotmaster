@@ -1,0 +1,29 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.MasterPageViewModel, DotvvmCoffeeTemplate
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <dot:RequiredResource Name="style"/>
+</head>
+<body>
+    <header>
+        <img src="~/Resources/Images/Logos/logo.png"/>
+        <%--<nav>
+            <dot:RouteLink RouteName="Default" Text="Homepage"/>
+        </nav>--%>
+    </header>
+    <main>
+        <h1>
+            GridView
+        </h1>
+        <section>
+            <dot:ContentPlaceHolder ID="MainContent" />
+        </section>
+    </main>
+</body>
+</html>
+
+

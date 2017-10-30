@@ -1,0 +1,17 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <span>
+        <dot:ComboBox DataSource="{value: Countries}"
+                      SelectedValue="{value: SelectedCountry}"
+                      DisplayMember="Name"
+                      SelectionChanged="{command: SelectedCountryChanged()}"
+                      EmptyItemText="Select country"/>
+        <dot:ComboBox DataSource="{value: Cities}"
+                      SelectedValue="{value: SelectedCity}"
+                      EmptyItemText="Select city"/>
+    </span>
+    <p>You've selected: {{value: SelectedCountry.Name}}, {{value: SelectedCity}}</p>
+</dot:Content>
+

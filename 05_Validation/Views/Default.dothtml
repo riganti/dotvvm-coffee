@@ -1,0 +1,17 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <form Validator.InvalidCssClass="invalid"
+          Validation.Enabled="true">
+        <dot:ValidationSummary class="validation-summary"/>
+
+        <dot:TextBox Text="{value: Email}"
+                     Type="Email"
+                     placeholder="Email address"
+                     Validator.Value="{value: Email}"/>
+
+        <dot:Button Text="Subscribe" Click="{command: Subscribe()}"/>
+    </form>
+</dot:Content>
+

@@ -1,0 +1,234 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=latin-ext");
+@import url(External/font-awesome.min.css);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+    transition: 0.4s ease;
+}
+
+html {
+    font-size: 14px;
+    line-height: 1.5em;
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100%;
+    background-color: #fff;
+}
+
+    body header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        background: #fff;
+    }
+
+        body header > * {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+            body header > *:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+
+    body main {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+        body main > * {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+            body main > *:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+
+        body main > section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            body main > section > * {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+                body main > section > *:last-child {
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+
+    body footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        background: #f2f2f2;
+        border-top: 1px solid #ccc;
+    }
+
+        body footer > * {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+            body footer > *:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: 200;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+
+    q:before, q:after, blockquote:before, blockquote:after {
+        content: "";
+        content: none;
+    }
+
+a img {
+    border: none;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+p, span {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5em;
+}
+
+button, input[type=button], a {
+    min-width: 140px;
+    padding: 10px 15px;
+    background: #27bf89;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 14px;
+    text-decoration: none;
+    transition-property: background;
+}
+
+    button:hover, input[type=button]:hover, a:hover {
+        background: #2cd498;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    form > * {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+        form > *:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+input[type=text] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    color: #f2f2f2;
+    font-weight: 500;
+}
+
+    nav > * {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+        nav > *:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+    nav > * {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }

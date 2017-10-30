@@ -1,0 +1,15 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <form>
+        <span>
+            <dot:TextBox Text="{value: Number1}" ValueType="Number" />
+            +
+            <dot:TextBox Text="{value: Number2}" ValueType="Number" />
+            = 
+            {{value: Result}}
+        </span>
+        <dot:Button Text="Calculate" Click="{command: Calculate(2)}"/>
+    </form>
+</dot:Content>

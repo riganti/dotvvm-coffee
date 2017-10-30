@@ -1,0 +1,10 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.AboutViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="TitleContent">
+    About
+</dot:Content>
+<dot:Content ContentPlaceHolderID="MainContent">
+    This is about page.
+</dot:Content>
+
