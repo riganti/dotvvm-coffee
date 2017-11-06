@@ -1,0 +1,18 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+   
+    <dot:FileUpload UploadedFiles="{value: UploadedFiles}"
+                    AllowedFileTypes=".jpg,image/png,audio/*"/>
+
+    <dot:Repeater DataSource="{value: UploadedFiles.Files}"
+                  WrapperTagName="table">
+        <tr>
+            <td>{{value: FileName}}</td>
+            <td>{{value: FileSize.FormattedText}}</td>
+        </tr>
+    </dot:Repeater>
+
+</dot:Content>
+
