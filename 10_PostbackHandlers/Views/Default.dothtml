@@ -1,0 +1,22 @@
+﻿@viewModel DotvvmCoffeeTemplate.ViewModels.DefaultViewModel, DotvvmCoffeeTemplate
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    
+    <dot:TextBox Text="{value: Name}"
+                    placeholder="Insert fruit name" />
+
+    <dot:Button Text="Add"
+                Click="{command: AddFruit(Name)}">
+        <PostBack.Handlers>
+            <dot:ConfirmPostBackHandler Message="Do you really want to add new fruit?"/>
+        </PostBack.Handlers>
+    </dot:Button>
+    
+    <dot:Repeater DataSource="{value: Fruits}"
+                  WrapperTagName="ul">
+       <li>{{value: _this}}</li>
+    </dot:Repeater>
+
+</dot:Content>
+
